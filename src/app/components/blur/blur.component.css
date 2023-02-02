@@ -1,5 +1,5 @@
 .wrapper {
-  @apply pt-10 container mx-auto;
+  @apply pt-10 container;
 }
 
 .card {
