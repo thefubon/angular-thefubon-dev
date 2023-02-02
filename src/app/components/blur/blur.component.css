@@ -11,13 +11,13 @@
 }
 
 .blur-1 {
-  @apply bg-white/50 blur-3xl absolute -right-[150px] bottom-[150px] z-10 w-[600px] h-[600px] rounded-full;
+  @apply bg-white/75 md:bg-white/50 blur-3xl absolute -right-20 md:right-[-150px] -bottom-20 md:bottom-[150px] z-10 w-64 h-64 md:w-[600px] md:h-[600px] rounded-full;
 }
 
 .blur-2 {
-  @apply bg-green-300/100 blur-3xl absolute -left-[150px] -top-[150px] z-10 w-[600px] h-[600px] rounded-full;
+  @apply bg-green-300/100 blur-3xl absolute -left-[150px] -top-[150px] z-10 w-64 h-64 md:w-[600px] md:h-[600px] rounded-full;
 }
 
 .blur-3{
-  @apply bg-yellow-300/100 blur-3xl absolute left-[150px] top-[150px] z-10 w-[600px] h-[600px] rounded-full;
+  @apply bg-yellow-300/100 blur-3xl absolute -right-40 md:left-[150px] -top-32 md:top-[150px] z-10 w-64 h-64 md:w-[600px] md:h-[600px] rounded-full;
 }
