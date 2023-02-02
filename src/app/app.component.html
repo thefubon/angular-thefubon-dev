@@ -1,12 +1,7 @@
-<div class="wrapper">
-  <div class="card">
-  <h1 class="heading font-bold">{{ title | titlecase }}</h1>
+<app-blur></app-blur>
 
-    <span class="blur-1"></span>
-    <span class="blur-2"></span>
-    <span class="blur-3"></span>
-  </div>
+<main>
+  <router-outlet></router-outlet>
+</main>
 
-</div>
-
-<router-outlet></router-outlet>
+<app-product></app-product>

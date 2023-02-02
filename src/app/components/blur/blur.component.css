@@ -1,0 +1,23 @@
+.wrapper {
+  @apply pt-10 container mx-auto;
+}
+
+.card {
+  @apply h-96 bg-gradient-to-r from-cyan-500 to-blue-500 relative rounded-2xl overflow-hidden flex justify-center items-center;
+}
+
+.heading {
+  @apply text-4xl text-white relative z-20;
+}
+
+.blur-1 {
+  @apply mix-blend-multiply bg-red-300/75 blur-3xl absolute right-[150px] bottom-[150px] z-10 w-[500px] h-[500px] rounded-full;
+}
+
+.blur-2 {
+  @apply mix-blend-multiply bg-green-300/100 blur-3xl absolute -left-[150px] -top-[150px] z-10 w-96 h-96 rounded-full;
+}
+
+.blur-3{
+  @apply mix-blend-multiply bg-yellow-300/100 blur-3xl absolute left-[150px] top-[150px] z-10 w-96 h-96 rounded-full;
+}
