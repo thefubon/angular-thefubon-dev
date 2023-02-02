@@ -11,7 +11,7 @@
 }
 
 .blur-1 {
-  @apply bg-red-300/75 blur-3xl absolute -right-[150px] bottom-[150px] z-10 w-[600px] h-[600px] rounded-full;
+  @apply bg-white/50 blur-3xl absolute -right-[150px] bottom-[150px] z-10 w-[600px] h-[600px] rounded-full;
 }
 
 .blur-2 {
