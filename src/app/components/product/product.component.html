@@ -1,13 +1,13 @@
-<div class="container py-10">
-  <img class="w-1/12" [src]="product.image" [alt]="product.title">
+<div class="container p-10 border h-full rounded-md">
+  <img class="w-1/6" [src]="product.image" [alt]="product.title">
   <h2 class="text-2xl font-bold text-primary">{{ product.title }}</h2>
   <p>Price: {{ product.price | currency: '₽' }}</p>
 
   <button
-    class="border py-2 px-4 rounded"
+    class="btn"
     [ngClass]="{
-      'bg-yellow-400': !details,
-      'bg-blue-400': details
+      'btn-primary': !details,
+      'btn-secondary': details
     }"
     (click)="details = !details"
   >
@@ -16,6 +16,8 @@
 
   <div *ngIf="details">
     <p>{{ product.description }}</p>
-    <p>Rate: {{ product.rating.rate }}</p>
+    <p>Rate: <span [ngStyle]="{fontWeight: 'bold'}">
+      {{ product.rating.rate | number:'1.2-4' }}
+    </span></p>
   </div>
 </div>
