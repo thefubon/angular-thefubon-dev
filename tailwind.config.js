@@ -1,8 +1,9 @@
-const { createThemes } = require('tw-colors');
+// const { createThemes } = require('tw-colors');
 
 module.exports = {
   content: [
     "./src/**/*.{html,ts}",
+    "./node_modules/preline/dist/*.js",
   ],
   darkMode: 'class',
   theme: {
@@ -38,25 +39,26 @@ module.exports = {
     },
   },
   plugins: [
-    createThemes({
-      light: {
-        'primary': '#ff500b',
-        'secondary-bg': '#fff',
-        'theme': '#fff',
-        'header-color': '#c23fe2',
-        'route-link-active': '#fff',
-        'link-color': '#555050',
-        'border-color': '#555050',
-      }, 
-      dark: {
-        'primary': '#2577c1',
-        'secondary-bg': '#424242',
-        'theme': '#424242',
-        'header-color': '#424242',
-        'route-link-active': '#ff500b',
-        'link-color': '#fff',
-        'border-color': '#1cd61c',
-      } 
-    })
+    // createThemes({
+    //   light: {
+    //     'primary': '#ff500b',
+    //     'secondary-bg': '#fff',
+    //     'theme': '#fff',
+    //     'header-color': '#c23fe2',
+    //     'route-link-active': '#fff',
+    //     'link-color': '#555050',
+    //     'border-color': '#555050',
+    //   }, 
+    //   dark: {
+    //     'primary': '#2577c1',
+    //     'secondary-bg': '#424242',
+    //     'theme': '#424242',
+    //     'header-color': '#424242',
+    //     'route-link-active': '#ff500b',
+    //     'link-color': '#fff',
+    //     'border-color': '#1cd61c',
+    //   } 
+    // }),
+    'preline/plugin',
   ],
 }

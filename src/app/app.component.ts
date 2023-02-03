@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IProduct } from './models/product';
 import { products as data} from './data/products';
 import { BehaviorSubject } from 'rxjs';
+import { ModalService } from './services/modal.service'
 
 @Component({
   selector: 'app-root',
@@ -10,13 +11,15 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class AppComponent {
   products: IProduct[] = data
-
   term = ''
+
 
   isDarkEnable = false;
   presentTheme$ = new BehaviorSubject<string>('theme-light');
 
-  constructor() {}
+  constructor (
+    public modalService: ModalService
+  ) { }
 
   ngOnInit() {
     const savedTheme = localStorage.getItem('theme');

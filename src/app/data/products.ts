@@ -7,7 +7,7 @@ export const products: IProduct[] = [
     title: 'Лента',
     price: 109.95,
     description: '13% на 5 покупок в месяц',
-    category: 'men\'s clothing',
+    category: 'Продукты',
     image: 'https://cdn.ogon.ru/insecure/q:80/resize:fill:56:56:1/gravity:ce/dpr:2/aHR0cDovL2JhY2tlbmQtZWNvc3lzdGVtLWZpbGUtc2VydmVyLWRvd25sb2FkLWh0dHA6ODA4MS92MS9maWxlcy9kb3dubG9hZC9wYXJ0bmVyL2ljb25faW1hZ2UvMDkxZGUyNjQ2NmM4ODAwOTc0ZDIwNDYzNjMzOTFjNzE.webp',
     rating: {
       rate: 3.9,
@@ -19,7 +19,7 @@ export const products: IProduct[] = [
     title: 'Газпромнефть',
     price: 22.3,
     description: '1,5 бонуса за каждый литр топлива и 25% кешбэк за кофе',
-    category: 'men\'s clothing',
+    category: 'Авто',
     image: 'https://cdn.ogon.ru/insecure/q:80/resize:fill:56:56:1/gravity:ce/dpr:2/aHR0cDovL2JhY2tlbmQtZWNvc3lzdGVtLWZpbGUtc2VydmVyLWRvd25sb2FkLWh0dHA6ODA4MS92MS9maWxlcy9kb3dubG9hZC9wYXJ0bmVyL2ljb25faW1hZ2UvYjYwMTJiN2FiNGFiYTYzODFjMjZmMmI5M2VmMmU4Y2M.webp',
     rating: {
       rate: 4.1,
@@ -31,7 +31,7 @@ export const products: IProduct[] = [
     title: 'FLOWWOW',
     price: 45.3,
     description: 'Скидка 11% на букеты, подарки и необычные товары',
-    category: 'men\'s clothing',
+    category: 'Подарки',
     image: 'https://cdn.ogon.ru/insecure/q:80/resize:fill:56:56:1/gravity:ce/dpr:2/aHR0cDovL2JhY2tlbmQtZWNvc3lzdGVtLWZpbGUtc2VydmVyLWRvd25sb2FkLWh0dHA6ODA4MS92MS9maWxlcy9kb3dubG9hZC9wYXJ0bmVyL2ljb25faW1hZ2UvMmI3Y2NkMTE1ZTQzY2JjNTI1ODFjMzY0N2Y4N2ExMTk.webp',
     rating: {
       rate: 6.1,

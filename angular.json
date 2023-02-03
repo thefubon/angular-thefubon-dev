@@ -27,7 +27,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/vendor/preline/dist/preline.js",
+              "src/assets/vendor/preline/dist/dark-mode.js"
+            ]
           },
           "configurations": {
             "production": {

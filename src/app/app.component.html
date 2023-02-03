@@ -3,28 +3,33 @@
   <a *ngIf="isDarkEnable" (click)="changeTheme()" mode-button style="font-size:30px">LIGHT</a>
   <a *ngIf="!isDarkEnable" (click)="changeTheme()" mode-button style="font-size:30px">DARK</a>
 
-<app-blur></app-blur>
+  <app-blur></app-blur>
 
-<main>
-  <router-outlet></router-outlet>
-</main>
+  <app-dark-mode></app-dark-mode>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
 
-<div class="container py-4">
+  <div class="container py-4">
+    <input
+      type="text"
+      class="border w-full p-2 bg-white dark:bg-black dark:text-white"
+      placeholder="Filter products..."
+      [(ngModel)]="term"
+    >
 
-  <input
-    type="text"
-    class="border w-full p-2"
-    placeholder="Filter products..."
-    [(ngModel)]="term"
-  >
-
-  <div class="grid grid-cols-3 gap-4 py-4">
-    <app-product
-      *ngFor="let product of products | filterProducts:term; let i = index"
-      [product]="product"
-    ></app-product>
+    <div class="grid grid-cols-3 gap-4 py-4">
+      <app-product
+        *ngFor="let product of products | filterProducts:term; let i = index"
+        [product]="product"
+      ></app-product>
+    </div>
   </div>
 
-</div>
+  <app-modal *ngIf="modalService.isVisible$ | async" title="Create New Product">
+    <app-create-products></app-create-products>
+  </app-modal>
+
+  <button (click)="modalService.open()">Open</button>
 
 </div>
