@@ -1,4 +1,13 @@
+<div [class]="(presentTheme$ | async)">
+
+  <a *ngIf="isDarkEnable" (click)="changeTheme()" mode-button style="font-size:30px">Default</a>
+  <a *ngIf="!isDarkEnable" (click)="changeTheme()" mode-button style="font-size:30px">Dark</a>
+
 <app-blur></app-blur>
+
+<div class='bg-primary container'>
+  test
+</div>
 
 <main>
   <router-outlet></router-outlet>
@@ -7,3 +16,5 @@
 <app-product
   [product]="products[0]"
 ></app-product>
+
+</div>
