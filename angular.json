@@ -29,7 +29,7 @@
             ],
             "scripts": [
               "src/assets/vendor/preline/dist/dark.js",
-              "src/assets/vendor/preline/dist/main.js"
+              "src/assets/vendor/preline/dist/preline.js"
             ]
           },
           "configurations": {
