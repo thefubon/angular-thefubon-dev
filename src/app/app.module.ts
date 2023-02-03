@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BlurComponent } from './components/blur/blur.component';
 import { ProductComponent } from './components/product/product.component';
+import {FormsModule} from '@angular/forms';
+import { FilterProductsPipe } from './pipes/filter-products.pipe'
 
 @NgModule({
   declarations: [
     AppComponent,
     BlurComponent,
-    ProductComponent
+    ProductComponent,
+    FilterProductsPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

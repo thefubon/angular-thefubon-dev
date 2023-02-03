@@ -9,12 +9,22 @@
   <router-outlet></router-outlet>
 </main>
 
-<div class="container grid grid-cols-3 gap-4 py-4">
-  <app-product
-    *ngFor="let product of products"
-    [product]="product"
-  ></app-product>
-  
+<div class="container py-4">
+
+  <input
+    type="text"
+    class="border w-full p-2"
+    placeholder="Filter products..."
+    [(ngModel)]="term"
+  >
+
+  <div class="grid grid-cols-3 gap-4 py-4">
+    <app-product
+      *ngFor="let product of products | filterProducts:term; let i = index"
+      [product]="product"
+    ></app-product>
+  </div>
+
 </div>
 
 </div>

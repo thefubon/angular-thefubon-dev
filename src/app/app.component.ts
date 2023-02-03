@@ -11,6 +11,8 @@ import { BehaviorSubject } from 'rxjs';
 export class AppComponent {
   products: IProduct[] = data
 
+  term = ''
+
   isDarkEnable = false;
   presentTheme$ = new BehaviorSubject<string>('theme-light');
 

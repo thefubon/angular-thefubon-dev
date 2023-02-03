@@ -4,11 +4,11 @@ import {IProduct} from '../models/product'
 export const products: IProduct[] = [
   {
     id: 1,
-    title: 'Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops',
+    title: 'Лента',
     price: 109.95,
-    description: 'Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday',
+    description: '13% на 5 покупок в месяц',
     category: 'men\'s clothing',
-    image: 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
+    image: 'https://cdn.ogon.ru/insecure/q:80/resize:fill:56:56:1/gravity:ce/dpr:2/aHR0cDovL2JhY2tlbmQtZWNvc3lzdGVtLWZpbGUtc2VydmVyLWRvd25sb2FkLWh0dHA6ODA4MS92MS9maWxlcy9kb3dubG9hZC9wYXJ0bmVyL2ljb25faW1hZ2UvMDkxZGUyNjQ2NmM4ODAwOTc0ZDIwNDYzNjMzOTFjNzE.webp',
     rating: {
       rate: 3.9,
       count: 120
@@ -16,11 +16,11 @@ export const products: IProduct[] = [
   },
   {
     id: 2,
-    title: 'Mens Casual Premium Slim Fit T-Shirts ',
+    title: 'Газпромнефть',
     price: 22.3,
-    description: 'Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.',
+    description: '1,5 бонуса за каждый литр топлива и 25% кешбэк за кофе',
     category: 'men\'s clothing',
-    image: 'https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg',
+    image: 'https://cdn.ogon.ru/insecure/q:80/resize:fill:56:56:1/gravity:ce/dpr:2/aHR0cDovL2JhY2tlbmQtZWNvc3lzdGVtLWZpbGUtc2VydmVyLWRvd25sb2FkLWh0dHA6ODA4MS92MS9maWxlcy9kb3dubG9hZC9wYXJ0bmVyL2ljb25faW1hZ2UvYjYwMTJiN2FiNGFiYTYzODFjMjZmMmI5M2VmMmU4Y2M.webp',
     rating: {
       rate: 4.1,
       count: 259
@@ -28,11 +28,11 @@ export const products: IProduct[] = [
   },
   {
     id: 3,
-    title: 'Жопа',
+    title: 'FLOWWOW',
     price: 45.3,
-    description: 'Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.',
+    description: 'Скидка 11% на букеты, подарки и необычные товары',
     category: 'men\'s clothing',
-    image: 'https://cdn.ogon.ru/insecure/q:80/resize:fill:220:263:1/gravity:ce/dpr:2/aHR0cDovL2JhY2tlbmQtZWNvc3lzdGVtLWZpbGUtc2VydmVyLWRvd25sb2FkLWh0dHA6ODA4MS92MS9maWxlcy9kb3dubG9hZC9wYXJ0bmVyL3Byb21vdGlvbi9wcmV2aWV3X2ltYWdlLzY1NTQ2MzQ0OTZlNjY4MjgwYzdhMjJiZmZlNzEzOTY1.webp',
+    image: 'https://cdn.ogon.ru/insecure/q:80/resize:fill:56:56:1/gravity:ce/dpr:2/aHR0cDovL2JhY2tlbmQtZWNvc3lzdGVtLWZpbGUtc2VydmVyLWRvd25sb2FkLWh0dHA6ODA4MS92MS9maWxlcy9kb3dubG9hZC9wYXJ0bmVyL2ljb25faW1hZ2UvMmI3Y2NkMTE1ZTQzY2JjNTI1ODFjMzY0N2Y4N2ExMTk.webp',
     rating: {
       rate: 6.1,
       count: 259
