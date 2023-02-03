@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BlurComponent } from './components/blur/blur.component';
 import { ProductComponent } from './components/product/product.component';
+import { HeaderComponent } from './components/global/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlurComponent,
-    ProductComponent
+    ProductComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
