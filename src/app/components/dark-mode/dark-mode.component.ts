@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./dark-mode.component.css']
 })
 export class DarkModeComponent {
-
+  details = false
 }
