@@ -16,7 +16,7 @@
       [(ngModel)]="term"
     >
 
-    <div class="grid grid-cols-3 gap-4 py-4">
+    <div class="grid md:grid-cols-3 gap-4 py-4">
       <app-product
         *ngFor="let product of products | filterProducts:term; let i = index"
         [product]="product"
