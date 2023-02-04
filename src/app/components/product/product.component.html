@@ -1,6 +1,6 @@
 <div class="container p-10 border h-full rounded-md" [id]="product.id">
   <img class="w-1/6" [src]="product.image" [alt]="product.title">
-  <h2 class="text-2xl font-bold text-primary">{{ product.title }}</h2>
+  <h2 class="heading">{{ product.title }}</h2>
   <p>{{ product.category }}</p>
   <p>Price: {{ product.price | currency: '₽' }}</p>
 
