@@ -4,7 +4,6 @@ export interface IProduct {
   price: number
   subtitle: string
   bgOffers: string
-  grid: string
   isDone: true|false
   description: string
   category: string

@@ -3,24 +3,8 @@ import {IProduct} from '../models/product'
 
 export const products: IProduct[] = [
   {
-    isDone: true,
-    grid: '!col-span-3 md:!col-span-2 lg:!col-span-2 xl:!col-span-3',
-    bgOffers: 'font-bold text-2xl',
-    title: 'Premier',
-    price: 109.95,
-    subtitle: '',
-    description: 'все фильмы, сериалы и шоу',
-    category: 'Огонь',
-    image: '/assets/img/logo/premier.svg',
-    rating: {
-      rate: 3.9,
-      count: 120
-    }
-  },
-  {
     id: 1,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-base',
     title: 'Premier',
     price: 109.95,
@@ -36,7 +20,6 @@ export const products: IProduct[] = [
   {
     id: 2,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-base',
     title: 'Пятёрочка',
     price: 22.3,
@@ -52,7 +35,6 @@ export const products: IProduct[] = [
   {
     id: 3,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-base',
     title: 'Газпромбанк',
     price: 45.3,
@@ -68,7 +50,6 @@ export const products: IProduct[] = [
   {
     id: 4,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-base',
     title: 'Ozon',
     price: 45.3,
@@ -84,7 +65,6 @@ export const products: IProduct[] = [
   {
     id: 5,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-base',
     title: 'Газпромнефть',
     price: 45.3,
@@ -100,7 +80,6 @@ export const products: IProduct[] = [
   {
     id: 6,
     isDone: false,
-    grid: '',
     bgOffers: 'bg-offers-base',
     title: 'Перекресток',
     price: 45.3,
@@ -114,24 +93,8 @@ export const products: IProduct[] = [
     },
   },
   {
-    isDone: true,
-    grid: '!col-span-3 md:!col-span-2 lg:!col-span-2 xl:!col-span-3',
-    bgOffers: 'font-bold text-2xl',
-    title: 'Premier',
-    price: 109.95,
-    subtitle: 'Действует до 12.10.2022',
-    description: 'все фильмы, сериалы и шоу',
-    category: 'Путешествия',
-    image: '/assets/img/logo/premier.svg',
-    rating: {
-      rate: 3.9,
-      count: 120
-    }
-  },
-  {
     id: 7,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-travel',
     title: 'Fun&Sun',
     price: 45.3,
@@ -147,7 +110,6 @@ export const products: IProduct[] = [
   {
     id: 8,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-travel',
     title: 'Ренесанс жизнь',
     price: 45.3,
@@ -163,7 +125,6 @@ export const products: IProduct[] = [
   {
     id: 9,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-travel',
     title: 'Островок',
     price: 45.3,
@@ -179,7 +140,6 @@ export const products: IProduct[] = [
   {
     id: 10,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-travel',
     title: 'Согаз',
     price: 45.3,
@@ -195,7 +155,6 @@ export const products: IProduct[] = [
   {
     id: 11,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-travel',
     title: 'Golden Key',
     price: 45.3,
@@ -209,24 +168,23 @@ export const products: IProduct[] = [
     },
   },
   {
-    isDone: true,
-    grid: '!col-span-3 md:!col-span-2 lg:!col-span-2 xl:!col-span-3',
-    bgOffers: 'font-bold text-2xl',
-    title: 'Premier',
-    price: 109.95,
-    subtitle: 'Действует до 12.10.2022',
-    description: 'все фильмы, сериалы и шоу',
-    category: 'Для дома и дачи',
-    image: '/assets/img/logo/premier.svg',
+    id: 11,
+    isDone: false,
+    bgOffers: 'bg-offers-travel',
+    title: 'Samsung',
+    price: 45.3,
+    subtitle: '30%',
+    description: 'за покупку техники',
+    category: 'Подарки',
+    image: '/assets/img/logo/samsung.svg',
     rating: {
-      rate: 3.9,
-      count: 120
-    }
+      rate: 6.1,
+      count: 259
+    },
   },
   {
     id: 13,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-dacha',
     title: 'Согаз',
     price: 45.3,
@@ -242,7 +200,6 @@ export const products: IProduct[] = [
   {
     id: 14,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-dacha',
     title: 'Hoff',
     price: 45.3,
@@ -258,7 +215,6 @@ export const products: IProduct[] = [
   {
     id: 15,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-dacha',
     title: 'Boxberry',
     price: 45.3,
@@ -274,7 +230,6 @@ export const products: IProduct[] = [
   {
     id: 16,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-dacha',
     title: 'Obi',
     price: 45.3,
@@ -290,7 +245,6 @@ export const products: IProduct[] = [
   {
     id: 17,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-dacha',
     title: 'Грузовичкоф',
     price: 45.3,
@@ -306,7 +260,6 @@ export const products: IProduct[] = [
   {
     id: 18,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-dacha',
     title: 'Ситилинк',
     price: 45.3,
@@ -322,7 +275,6 @@ export const products: IProduct[] = [
   {
     id: 19,
     isDone: false,
-    grid: 'h-52',
     bgOffers: 'bg-offers-dacha',
     title: 'Технопарк',
     price: 45.3,

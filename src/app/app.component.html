@@ -94,12 +94,11 @@
   
       <div class="flex-1 space-y-4">
         
-        <div class="grid grid-flow-row-dense grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
           <app-product
             *ngFor="let product of products | filterProducts:term; let i = index"
             [product]="product"
-            [class]="product.grid"
-            class="col-span-3 md:col-span-1 lg:col-span-1 xl:col-span-1"
+            class="h-48"
           ></app-product>
         </div>
 
