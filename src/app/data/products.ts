@@ -4,11 +4,12 @@ import {IProduct} from '../models/product'
 export const products: IProduct[] = [
   {
     id: 1,
-    title: 'Лента',
+    title: 'Premier',
     price: 109.95,
-    description: '13% на 5 покупок в месяц',
+    subtitle: 'без ограничений',
+    description: 'все фильмы, сериалы и шоу',
     category: 'Продукты',
-    image: 'https://cdn.ogon.ru/insecure/q:80/resize:fill:56:56:1/gravity:ce/dpr:2/aHR0cDovL2JhY2tlbmQtZWNvc3lzdGVtLWZpbGUtc2VydmVyLWRvd25sb2FkLWh0dHA6ODA4MS92MS9maWxlcy9kb3dubG9hZC9wYXJ0bmVyL2ljb25faW1hZ2UvMDkxZGUyNjQ2NmM4ODAwOTc0ZDIwNDYzNjMzOTFjNzE.webp',
+    image: '/assets/img/logo/premier.svg',
     rating: {
       rate: 3.9,
       count: 120
@@ -16,11 +17,12 @@ export const products: IProduct[] = [
   },
   {
     id: 2,
-    title: 'Газпромнефть',
+    title: 'Пятёрочка',
     price: 22.3,
-    description: '1,5 бонуса за каждый литр топлива и 25% кешбэк за кофе',
+    subtitle: '10%',
+    description: 'скидка на покупки в онлайн-магазине и супермаркетах',
     category: 'Авто',
-    image: 'https://cdn.ogon.ru/insecure/q:80/resize:fill:56:56:1/gravity:ce/dpr:2/aHR0cDovL2JhY2tlbmQtZWNvc3lzdGVtLWZpbGUtc2VydmVyLWRvd25sb2FkLWh0dHA6ODA4MS92MS9maWxlcy9kb3dubG9hZC9wYXJ0bmVyL2ljb25faW1hZ2UvYjYwMTJiN2FiNGFiYTYzODFjMjZmMmI5M2VmMmU4Y2M.webp',
+    image: '/assets/img/logo/pyaterka.svg',
     rating: {
       rate: 4.1,
       count: 259
@@ -28,11 +30,51 @@ export const products: IProduct[] = [
   },
   {
     id: 3,
-    title: 'FLOWWOW',
+    title: 'Газпромбанк',
     price: 45.3,
-    description: 'Скидка 11% на букеты, подарки и необычные товары',
+    subtitle: 'бесплатное',
+    description: 'обслуживание дебетовой карты, повышенный кешбэк',
     category: 'Подарки',
-    image: 'https://cdn.ogon.ru/insecure/q:80/resize:fill:56:56:1/gravity:ce/dpr:2/aHR0cDovL2JhY2tlbmQtZWNvc3lzdGVtLWZpbGUtc2VydmVyLWRvd25sb2FkLWh0dHA6ODA4MS92MS9maWxlcy9kb3dubG9hZC9wYXJ0bmVyL2ljb25faW1hZ2UvMmI3Y2NkMTE1ZTQzY2JjNTI1ODFjMzY0N2Y4N2ExMTk.webp',
+    image: '/assets/img/logo/gpb.svg',
+    rating: {
+      rate: 6.1,
+      count: 259
+    },
+  },
+  {
+    id: 4,
+    title: 'Ozon',
+    price: 45.3,
+    subtitle: 'бесплатная',
+    description: 'курьерская доставка, повышенные бонусы за покупки',
+    category: 'Подарки',
+    image: '/assets/img/logo/ozon.svg',
+    rating: {
+      rate: 6.1,
+      count: 259
+    },
+  },
+  {
+    id: 5,
+    title: 'Газпромнефть',
+    price: 45.3,
+    subtitle: '1,5 бонуса',
+    description: 'за каждый литр топлива и кешбэк 25% за кофе',
+    category: 'Подарки',
+    image: '/assets/img/logo/gpn.svg',
+    rating: {
+      rate: 6.1,
+      count: 259
+    },
+  },
+  {
+    id: 6,
+    title: 'Перекресток',
+    price: 45.3,
+    subtitle: '10%',
+    description: 'скидка на 5 покупок в месяц, на сумму от 3000₽',
+    category: 'Подарки',
+    image: '/assets/img/logo/perekrestok.svg',
     rating: {
       rate: 6.1,
       count: 259

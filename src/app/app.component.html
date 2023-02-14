@@ -1,28 +1,65 @@
 <div class="bg-secondary-bg">
 
-  <app-blur></app-blur>
+  <section class="container py-10">
+    <div class="flex gap-6">
+      <div class="shrink-0 w-[282px]">
+        <div class="bg-gray-50 p-4 space-y-6 rounded-xl">
+          <button class="btn btn-primary w-full">Добавить пакеты</button>
 
-  <app-dark-mode></app-dark-mode>
+          <div class="hs-accordion-group">
+            <div class="hs-accordion active" id="hs-basic-with-arrow-heading-one">
+              <button class="hs-accordion-toggle hs-accordion-active:text-black group py-3 inline-flex justify-between items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-black dark:text-gray-200 dark:hover:text-gray-400" aria-controls="hs-basic-with-arrow-collapse-one">
+                <span class="font-bold">Категории</span>
+                
+                <svg class="hs-accordion-active:hidden hs-accordion-active:text-black hs-accordion-active:group-hover:text-black block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <svg class="hs-accordion-active:block hs-accordion-active:text-black hs-accordion-active:group-hover:text-black hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                
+              </button>
+
+              <div id="hs-basic-with-arrow-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-arrow-heading-one">
+                
+                <ul class="grid gap-4">
+                  <li></li>
+                </ul>
+
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+  
+      <div class="flex-1">
+
+        <input
+          type="text"
+          class="border w-full p-2 bg-light-primary dark:bg-dark-primary dark:text-white mb-4"
+          placeholder="Filter products..."
+          [(ngModel)]="term"
+        >
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <app-product
+            *ngFor="let product of products | filterProducts:term; let i = index"
+            [product]="product"
+          ></app-product>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- <app-blur></app-blur>
+
+  <app-dark-mode></app-dark-mode> -->
   
   <main>
     <router-outlet></router-outlet>
   </main>
-
-  <div class="container py-4">
-    <input
-      type="text"
-      class="border w-full p-2 bg-light-primary dark:bg-dark-primary dark:text-white"
-      placeholder="Filter products..."
-      [(ngModel)]="term"
-    >
-
-    <div class="grid md:grid-cols-3 gap-4 py-4">
-      <app-product
-        *ngFor="let product of products | filterProducts:term; let i = index"
-        [product]="product"
-      ></app-product>
-    </div>
-  </div>
 
   <app-modal *ngIf="modalService.isVisible$ | async" title="Create New Product">
     <app-create-products></app-create-products>

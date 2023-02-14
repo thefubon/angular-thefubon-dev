@@ -7,11 +7,11 @@ h2.heading {
 }
 
 .btn {
-  @apply px-6 py-3 rounded-md text-white
+  @apply px-6 py-3 rounded-xl text-white
 }
 
 .btn-primary {
-  @apply bg-indigo-600 hover:bg-indigo-500;
+  @apply bg-gradient-to-tr from-[#F07D00] to-[#E51A89];
 }
 
 .btn-secondary {
