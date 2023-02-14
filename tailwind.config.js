@@ -33,7 +33,7 @@ module.exports = {
     extend: {
       colors: {
         light: {
-          'primary': '#2B2B2Bц',
+          'primary': '#2B2B2B',
           'secondary-bg': '#fff',
           'theme': '#fff',
           'header-color': '#c23fe2',

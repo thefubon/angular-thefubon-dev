@@ -1,10 +1,10 @@
 <div class="bg-secondary-bg">
 
   <section class="container py-10">
-    <div class="flex gap-6">
-      <div class="shrink-0 w-[282px]">
+    <div class="flex flex-col sm:flex-row gap-6">
+      <div class="shrink-0 sm:w-[240px] lg:w-[282px]">
         <div class="bg-gray-50 p-4 space-y-6 rounded-xl">
-          <button class="btn btn-primary w-full">Добавить пакеты</button>
+          <button class="btn btn-primary w-full font-medium">Добавить пакеты</button>
 
           <div class="hs-accordion-group">
             <div class="hs-accordion active" id="hs-basic-with-arrow-heading-one">
@@ -22,8 +22,51 @@
 
               <div id="hs-basic-with-arrow-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-arrow-heading-one">
                 
-                <ul class="grid gap-4">
-                  <li></li>
+                <ul class="grid gap-2">
+                  <li class="flex items-center">
+                    <img src="/assets/img/icon/products.svg" alt="">
+                    <span class="text-gray-600">Продукты</span>
+                  </li>
+
+                  <li class="flex items-center">
+                    <img src="/assets/img/icon/fun.svg" alt="">
+                    <span class="text-gray-600">Развлечения</span>
+                  </li>
+
+                  <li class="flex items-center">
+                    <img src="/assets/img/icon/strahovka.svg" alt="">
+                    <span class="text-gray-600">Страхование</span>
+                  </li>
+
+                  <li class="flex items-center">
+                    <img src="/assets/img/icon/auto.svg" alt="">
+                    <span class="text-gray-600">Авто</span>
+                  </li>
+
+                  <li class="flex items-center">
+                    <img src="/assets/img/icon/zdorovie.svg" alt="">
+                    <span class="text-gray-600">Здоровье</span>
+                  </li>
+
+                  <li class="flex items-center">
+                    <img src="/assets/img/icon/krasota.svg" alt="">
+                    <span class="text-gray-600">Красота</span>
+                  </li>
+
+                  <li class="flex items-center">
+                    <img src="/assets/img/icon/dostavka.svg" alt="">
+                    <span class="text-gray-600">Доставка еды</span>
+                  </li>
+
+                  <li class="flex items-center">
+                    <img src="/assets/img/icon/technologii.svg" alt="">
+                    <span class="text-gray-600">Технологии</span>
+                  </li>
+
+                  <li class="flex items-center">
+                    <img src="/assets/img/icon/mobile.svg" alt="">
+                    <span class="text-gray-600">Мобильная связь</span>
+                  </li>
                 </ul>
 
               </div>
@@ -33,16 +76,25 @@
         </div>
       </div>
   
-      <div class="flex-1">
+      <div class="flex-1 space-y-4">
 
-        <input
-          type="text"
-          class="border w-full p-2 bg-light-primary dark:bg-dark-primary dark:text-white mb-4"
-          placeholder="Filter products..."
-          [(ngModel)]="term"
-        >
+        <div class="flex justify-between items-center">
+
+          <div class="flex-1 flex items-center">
+            <h4 class="font-bold text-2xl">Огонь</h4>
+          </div>
         
-        <div class="grid md:grid-cols-3 gap-6">
+          <div class="shrink-0">
+            <input
+              type="text"
+              class="border w-full rounded-lg py-2 px-3 bg-white dark:bg-slate-900 focus:outline-0 focus:ring-0 dark:text-white"
+              placeholder="Фильтр партнеров"
+              [(ngModel)]="term"
+            >
+          </div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           <app-product
             *ngFor="let product of products | filterProducts:term; let i = index"
             [product]="product"
@@ -61,10 +113,10 @@
     <router-outlet></router-outlet>
   </main>
 
-  <app-modal *ngIf="modalService.isVisible$ | async" title="Create New Product">
+  <!-- <app-modal *ngIf="modalService.isVisible$ | async" title="Create New Product">
     <app-create-products></app-create-products>
   </app-modal>
 
-  <button (click)="modalService.open()">Open</button>
+  <button (click)="modalService.open()">Open</button> -->
 
 </div>
