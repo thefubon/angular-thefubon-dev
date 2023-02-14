@@ -32,23 +32,30 @@ module.exports = {
     },
     extend: {
       colors: {
-        light: {
-          'primary': '#2B2B2B',
-          'secondary-bg': '#fff',
-          'theme': '#fff',
-          'header-color': '#c23fe2',
-          'route-link-active': '#fff',
-          'link-color': '#555050',
-          'border-color': '#555050',
-        }, 
-        dark: {
-          'primary': '#2577c1',
-          'secondary-bg': '#424242',
-          'theme': '#424242',
-          'header-color': '#424242',
-          'route-link-active': '#ff500b',
-          'link-color': '#fff',
-          'border-color': '#1cd61c',
+        base: {
+          'default': '#2B2B2B',
+          'primary': '#0073FF',
+          'secondary': '#F07D00',
+          'tertiary': '#E4136C',
+          'system': '#E2E8F0',
+          'light': '#ffffff',
+          'dark': '#002033',
+          'caution': '#FACC15',
+          'success': '#22C55E',
+          'alert': '#F43F5E',
+          'normal': '#38BDF8',
+          'error': '#DC2626',
+        },
+        offers: {
+          'base': '#F8F8F8',
+          'travel': '#F0F9FF',
+          'dacha': '#F0FDF4',
+        },
+        link: {
+          DEFAULT: '#0073FF',
+          'hover': '#4C95EF',
+          'active': '#045CC8',
+          'disabled': '#E2E8F0',
         }
       },
       spacing: {
